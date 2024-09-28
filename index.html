@@ -23,25 +23,45 @@
         a:hover {
             text-decoration: underline;
         }
+        .container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .profile-picture {
+            flex: 1;
+            padding-right: 20px; /* Space between picture and text */
+        }
+        .info {
+            flex: 2; /* This takes up more space than the picture */
+        }
+        img {
+            max-width: 100%; /* Responsive image */
+            height: auto;
+            border-radius: 50%; /* Circular image */
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to My Website</h1>
     <p>Hello, I am <strong>Rishitha</strong>. This is my personal website hosted on GitHub Pages.</p>
 
-    <h2>My Picture</h2>
-    <img src="IMG_4787.jpg" alt="Profile Picture" style="width: 150px; height: auto; border-radius: 50%;">
+    <div class="container">
+        <div class="profile-picture">
+            <img src="IMG_4787.jpg" alt="Profile Picture">
+        </div>
+        <div class="info">
+            <h2>About Me</h2>
+            <p>I am a passionate developer interested in AI and web development.</p>
 
-    <h2>About Me</h2>
-    <p>I am a passionate developer interested in AI and web development.</p>
+            <h2>Education</h2>
+            <p>I am currently doing my Master's in Information Systems at Santa Clara University.</p>
 
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:pusapatirishitha98@gmail.com">pusapatirishitha98@gmail.com</a>.</p>
 
-    <h2>Education</h2>
-    <p>I am currently doing my Master's in Information Systems at Santa Clara University.</p>
-
-    <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:pusapatirishitha98@gmail.com">pusapatirishitha98@gmail.com</a>.</p>
-
-    <p><a href="yourcv.pdf">Download my CV</a></p>
+            <p><a href="Padma Rishitha Pusapati.pdf">Download my CV</a></p>
+        </div>
+    </div>
 </body>
 </html>
