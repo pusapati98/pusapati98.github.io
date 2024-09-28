@@ -6,18 +6,25 @@
     <title>My GitHub Landing Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Dark text color */
         }
         h1 {
-            color: #333;
+            color: #4CAF50; /* Green color for the main heading */
+            text-align: center;
         }
         p {
             margin: 10px 0;
+            padding: 10px;
+            background: #fff; /* White background for paragraphs */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
         }
         a {
-            color: #0066cc;
+            color: #0066cc; /* Link color */
             text-decoration: none;
         }
         a:hover {
@@ -27,18 +34,38 @@
             display: flex;
             align-items: center;
             margin-top: 20px;
+            background-color: #fff; /* White background for the container */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Shadow for the container */
         }
         .profile-picture {
             flex: 1;
             padding-right: 20px; /* Space between picture and text */
+            text-align: center; /* Center the image */
         }
         .info {
             flex: 2; /* This takes up more space than the picture */
         }
         img {
-            max-width: 100%; /* Responsive image */
+            max-width: 150px; /* Fixed width for the profile picture */
             height: auto;
             border-radius: 50%; /* Circular image */
+            border: 4px solid #4CAF50; /* Border around the image */
+        }
+        h2 {
+            color: #333; /* Dark color for subheadings */
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack on smaller screens */
+                align-items: center;
+            }
+            .profile-picture {
+                padding-right: 0; /* Remove padding on smaller screens */
+                margin-bottom: 20px; /* Add space below the picture */
+            }
         }
     </style>
 </head>
