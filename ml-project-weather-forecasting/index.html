@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Forecasting ML Project</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>Weather Forecasting using Machine Learning</h1>
+    <p>Group 9: Mehak • Tanya • Kalyani • Rishitha</p>
+  </header>
+
+  <main>
+    <section class="two-col">
+      <div class="card">
+        <h2>Overview</h2>
+        <p>
+          We classify weather conditions (<strong>Sunny</strong>, <strong>Cloudy</strong>, <strong>Rainy</strong>, <strong>Snowy</strong>) from
+          meteorological features (temperature, humidity, wind speed, precipitation, pressure, etc.).
+          We evaluated multiple models and selected <strong>LightGBM</strong> as the best performer
+          (~91% accuracy; best F1), balancing precision and recall for reliable predictions.
+        </p>
+        <div class="keypoints">
+          <ul>
+            <li>Dataset: 13,200 samples · 11 features (7 numerical, 4 categorical)</li>
+            <li>Preprocessing: outlier handling, scaling, one-hot encoding, SMOTE</li>
+            <li>Models: Logistic Regression, SVM, KNN, Decision Tree, Random Forest,
+                Gradient Boosting, XGBoost, <strong>LightGBM</strong>, CatBoost</li>
+            <li>Best Model: <strong>LightGBM</strong> (highest test accuracy & F1)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Project Files</h2>
+        <div class="downloads">
+          <a href="Project_Report.pdf" target="_blank">📄 Project Report (PDF)</a>
+          <a href="ML Project.pdf" target="_blank">📊 Presentation Slides (PDF)</a>
+          <a href="Final Code.ipynb" target="_blank">💻 Jupyter Notebook (IPYNB)</a>
+        </div>
+        <p class="meta">Tip: right-click → “Open link in new tab” to keep this page open.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Results Gallery</h2>
+      <p class="meta">Add PNGs into this folder with these names and they’ll appear below.</p>
+      <div class="gallery">
+        <figure class="thumb">
+          <img src="accuracy.png" alt="Model accuracy comparison">
+          <figcaption>Model Accuracy Comparison</figcaption>
+        </figure>
+        <figure class="thumb">
+          <img src="confusion_matrix.png" alt="Confusion matrix of best model">
+          <figcaption>Confusion Matrix — LightGBM</figcaption>
+        </figure>
+        <figure class="thumb">
+          <img src="feature_importance.png" alt="Feature importance chart">
+          <figcaption>Top Features (Importance)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Methods (Short)</h2>
+      <ul>
+        <li><strong>Preprocessing:</strong> IQR outlier check; StandardScaler (numeric); One-Hot Encoding (categorical); SMOTE (class balance)</li>
+        <li><strong>Evaluation:</strong> accuracy, precision, recall, F1; validation for tuning</li>
+        <li><strong>Selection:</strong> LightGBM chosen for consistent top accuracy & F1 and efficient training</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Weather Forecasting ML Project · Santa Clara University</p>
+  </footer>
+</body>
+</html>
