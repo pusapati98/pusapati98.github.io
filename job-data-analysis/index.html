@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Data Analysis — Python Project</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="Analyze job-market data: roles, skills, salaries, and geographies. Interactive maps + notebook + slides." />
+</head>
+<body>
+  <img class="cover" src="cover.png" alt="Job Data Analysis cover" />
+  <header>
+    <div class="wrap">
+      <h1>Job Data Analysis</h1>
+      <p>Roles • Skills • Salaries • Geographies — Python / Pandas / Plotly</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <h2>Overview</h2>
+        <p>
+          This project explores job listings to uncover demand by title and city, trending skills,
+          and salary distributions. It includes cleaning, EDA, text analysis for skills, and rich
+          visualizations. (See README for objectives, dataset schema, and tooling details.)
+        </p>
+        <ul class="meta">
+          <li>Objectives: demand by role & location, skills trends, salary ranges.</li>
+          <li>Tech: Python, Pandas/NumPy, Matplotlib/Seaborn/Plotly, NLTK, Jupyter.</li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Open the Assets</h2>
+        <div class="downloads">
+          <a href="Job Data Analysis.pdf" target="_blank" rel="noopener">📊 Slides / Report (PDF)</a>
+          <!-- Notebook opens in browser via nbviewer -->
+          <a href="https://nbviewer.org/url/https://pusapati98.github.io/job-data-analysis/Job%20Data%20Analysis.ipynb"
+             target="_blank" rel="noopener">💻 Notebook (nbviewer)</a>
+          <!-- Optional: expose the buzzword list -->
+          <a href="skills_buzzwords.txt" target="_blank" rel="noopener">🧾 Skills/Buzzwords list</a>
+        </div>
+        <p class="meta">Slides highlight data cleaning, feature splits, and key visuals; the notebook contains full code & EDA.</p>
+      </aside>
+    </section>
+
+    <section class="card">
+      <h2>Interactive Maps</h2>
+      <p class="meta">Click a thumbnail to open the live Folium map in a new tab.</p>
+      <div class="gallery">
+        <figure class="thumb">
+          <a href="company_map.html" target="_blank" rel="noopener">
+            <img src="map_companies.png" alt="Heatmap of companies worldwide">
+          </a>
+          <figcaption>Company Locations — interactive heatmap</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="world_company_map.html" target="_blank" rel="noopener">
+            <img src="map_hq.png" alt="Heatmap of headquarters worldwide">
+          </a>
+          <figcaption>Headquarters — interactive heatmap</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Method & Highlights</h2>
+        <ul>
+          <li>Data cleaning: nulls/duplicates handled, salary & experience parsed, multi-valued skills tokenized.</li>
+          <li>EDA: job counts by city/title/company, salary distributions by role & level.</li>
+          <li>Text analysis: frequent technical keywords / buzzwords across roles.</li>
+          <li>Visuals: bar charts, histograms, correlation views, word clouds, and maps.</li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h2>Key Insights (sample)</h2>
+        <ul>
+          <li>Top skills include Python, SQL, Excel, AWS; higher salaries trend with cloud/AI roles.</li>
+          <li>Hiring hotspots include SF, NYC, and Seattle; remote roles increasing.</li>
+        </ul>
+        <p class="meta">See README/slides for the full set of insights.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Job Data Analysis · Built with Python</p>
+  </footer>
+</body>
+</html>
