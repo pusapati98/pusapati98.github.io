@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Fitness Platform – DBMS Project</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="DBMS project: Online Fitness Platform with memberships, trainers, sessions, payments, BMI tracking, and feedback." />
+</head>
+<body>
+  <header class="hero">
+    <h1>Online Fitness Platform</h1>
+    <p class="subtitle">Database Design · EER Model · Memberships · Sessions · Payments</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Overview</h2>
+      <p>
+        A database-backed platform for fitness services that supports personalized workout plans,
+        nutrition guidance, trainer interactions, payments, BMI tracking, referrals, and feedback.
+        Core entities include <em>Login</em>, <em>Customer</em>, <em>Trainer</em>, <em>Membership</em>,
+        <em>WorkoutPlan</em>, <em>ExercisePlan</em>, <em>Exercises</em>, <em>Session</em>,
+        <em>NutritionPlan</em>, <em>Payment</em>, <em>BMI</em>, and <em>Feedback</em>.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Key Features</h3>
+        <ul>
+          <li>Personalized workout & nutrition plans</li>
+          <li>Membership tiers (online-only to premium with offline training)</li>
+          <li>Trainer sessions, feedback & ratings</li>
+          <li>Secure payments with referral discounts</li>
+          <li>BMI calculation & user progress tracking</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Data Model</h3>
+        <div class="thumbs">
+          <figure>
+            <img src="eer-diagram.png" alt="EER diagram of the Online Fitness Platform">
+            <figcaption>EER Diagram</figcaption>
+          </figure>
+          <figure>
+            <img src="schema.png" alt="Relational schema derived from the EER model">
+            <figcaption>Relational Schema</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Downloads</h2>
+      <div class="downloads">
+        <a href="FINAL REPORT.docx">📄 Final Report (DOCX)</a>
+        <a href="Project proposal.docx">📝 Project Proposal (DOCX)</a>
+        <a href="Overview.docx">🧭 Overview (DOCX)</a>
+        <a href="Online-Fitness-Platform.docx">📚 Full Write-up (DOCX)</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Notes</h2>
+      <ul>
+        <li>Customers and trainers are disjoint roles; authentication via <em>Login</em>.</li>
+        <li>Memberships link customers to plans; payments compute final amounts with discounts.</li>
+        <li>Sessions connect customers, trainers, and plans; feedback records ratings/comments.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Online Fitness Platform — DBMS Project</p>
+  </footer>
+</body>
+</html>
