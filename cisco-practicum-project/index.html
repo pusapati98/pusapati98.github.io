@@ -5,31 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cisco Practicum Project</title>
   <link rel="stylesheet" href="./style.css" />
-  <meta name="description" content="Cisco Practicum Project — Data analysis on RMA cases, product families, automation opportunities, and repair alignment." />
+  <meta name="description" content="Cisco practicum project analyzing product return data, resolution times, and automation opportunities." />
 </head>
 <body>
-  <img class="cover" src="cisco_cover.png" alt="Cisco Project Cover" />
-  
+  <img class="cover" src="cisco_cover.png" alt="Cisco Practicum Project cover" />
   <header>
     <div class="wrap">
       <h1>Cisco Practicum Project</h1>
-      <p>Product Returns • Process Improvement • Automation — Data Science Practicum with Cisco</p>
+      <p>Data Analytics • Product Returns • Resolution Times • Automation</p>
     </div>
   </header>
 
   <main>
+    <!-- Overview -->
     <section class="grid">
       <article class="card">
         <h2>Overview</h2>
         <p>
-          This practicum project with Cisco focused on analyzing large-scale Return Merchandise Authorization (RMA) data
-          to uncover patterns in product failures, resolution bottlenecks, and opportunities for automation. 
-          We examined issue frequencies, resolution times, and repair alignment scores across multiple product families 
-          and customer segments.
+          As part of a practicum with Cisco, our team analyzed large-scale product return (RMA) data to
+          identify patterns in failure frequencies, resolution delays, and repair alignment scores across 
+          multiple product families and customer segments.
         </p>
         <ul class="meta">
-          <li>Key goals: identify failure hotspots, reduce resolution delays, and recommend automation candidates.</li>
-          <li>Tech: Python, SQL, Tableau, Excel, advanced data visualization & analysis.</li>
+          <li>Objectives: identify failure hotspots, reduce resolution delays, recommend automation opportunities.</li>
+          <li>Tech: Python, SQL, Tableau, Excel, NLP, advanced data visualization & analysis.</li>
         </ul>
       </article>
 
@@ -42,49 +41,57 @@
       </aside>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Our Team</h2>
-        <div class="team">
-          <img src="cisco_team.jpg" alt="Cisco Practicum Team" class="team-photo" />
-          <p class="meta">A wonderful collaborative team effort with Santa Clara University and Cisco mentors.</p>
+    <!-- Team Section -->
+    <section class="card">
+      <h2>Our Team</h2>
+      <div class="team-large">
+        <a href="cisco_team.jpg" target="_blank" rel="noopener">
+          <img class="team-photo-large" src="cisco_team.jpg" alt="Cisco practicum project team">
+        </a>
+        <div class="team-desc">
+          <p>
+            A wonderful collaborative team effort with Santa Clara University students and Cisco mentors.  
+            Together we applied <strong>NLP</strong>, data visualization, and advanced analytics to uncover  
+            patterns in product returns, resolution times, and automation opportunities.  
+          </p>
         </div>
-      </article>
+      </div>
     </section>
 
+    <!-- Sample Results -->
     <section class="card">
       <h2>Sample Results</h2>
-      <p class="meta">Click a thumbnail to enlarge the result visuals.</p>
+      <p class="meta">Click a thumbnail to enlarge result visuals.</p>
       <div class="gallery">
         <figure class="thumb">
           <a href="seasonality.png" target="_blank" rel="noopener">
-            <img src="seasonality.png" alt="Seasonality Trends">
+            <img src="seasonality.png" alt="Seasonality spikes in high-volume products">
           </a>
-          <figcaption>Seasonality: Spikes in RMA returns for key products across months</figcaption>
+          <figcaption>Seasonality — High RMA spikes across PHONE, VIPTELA, C2960L, SFP10G</figcaption>
         </figure>
         <figure class="thumb">
           <a href="product_family.png" target="_blank" rel="noopener">
-            <img src="product_family.png" alt="Product Family Analysis">
+            <img src="product_family.png" alt="Product family resolution times">
           </a>
-          <figcaption>Product Families: Issue frequency vs. resolution time</figcaption>
+          <figcaption>Product Families — Frequency vs Resolution Time</figcaption>
         </figure>
         <figure class="thumb">
           <a href="automation.png" target="_blank" rel="noopener">
-            <img src="automation.png" alt="Automation Candidates">
+            <img src="automation.png" alt="Automation candidates">
           </a>
-          <figcaption>Automation: Identifying products suitable for repair automation</figcaption>
+          <figcaption>Automation — Products suitable for automation</figcaption>
         </figure>
         <figure class="thumb">
           <a href="cost_distribution.png" target="_blank" rel="noopener">
-            <img src="cost_distribution.png" alt="Cost vs Resolution Time">
+            <img src="cost_distribution.png" alt="Cost distribution vs resolution time">
           </a>
-          <figcaption>Cost Distribution: Allocated cost vs. median resolution time</figcaption>
+          <figcaption>Cost Distribution — Allocated cost vs resolution time</figcaption>
         </figure>
         <figure class="thumb">
           <a href="alignment.png" target="_blank" rel="noopener">
-            <img src="alignment.png" alt="Repair Alignment Score">
+            <img src="alignment.png" alt="Customer repair alignment scores">
           </a>
-          <figcaption>Repair Alignment: Customer segments with automation potential</figcaption>
+          <figcaption>Alignment — Customer repair alignment scores</figcaption>
         </figure>
       </div>
     </section>

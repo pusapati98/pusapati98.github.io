@@ -130,6 +130,31 @@ h2 {
   border: 1px solid var(--line);
 }
 
+.team-large {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.team-photo-large {
+  width: 100%;
+  max-width: 450px; /* adjust to control size */
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+.team-photo-large:hover {
+  transform: scale(1.02);
+}
+
+.team-desc {
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
 footer {
   background: #eef1f7;
   color: #445;
