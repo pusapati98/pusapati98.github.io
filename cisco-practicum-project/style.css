@@ -138,12 +138,8 @@ h2 {
 }
 
 .team-photo-large {
-  width: 100%;
-  max-width: 450px; /* adjust to control size */
+  max-width: 55%;   
   border-radius: 10px;
-  border: 1px solid var(--line);
-  cursor: pointer;
-  transition: transform .2s ease;
 }
 .team-photo-large:hover {
   transform: scale(1.02);
