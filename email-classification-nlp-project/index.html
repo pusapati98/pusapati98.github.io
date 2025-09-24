@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Email Classification NLP Project</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="NLP project for spam detection and email priority classification using ML models." />
+</head>
+<body>
+  <img class="cover" src="cover.png" alt="Email Classification Project cover" />
+  <header>
+    <div class="wrap">
+      <h1>Email Classification System</h1>
+      <p>Spam Detection • Priority Classification — Python / NLP / ML</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <h2>Overview</h2>
+        <p>
+          This project applies Natural Language Processing (NLP) techniques to classify emails as spam or ham,
+          and further assign priority levels (High, Medium, Low). It includes dataset collection from Gmail API,
+          preprocessing, model building, and performance evaluation.
+        </p>
+        <ul class="meta">
+          <li>Objectives: spam detection and priority classification.</li>
+          <li>Tech: Python, Pandas, NLTK, Scikit-learn, TF-IDF, Logistic Regression, Random Forest, Jupyter.</li>
+        </ul>
+      </article>
+
+      <aside class="card">
+        <h2>Open the Assets</h2>
+        <div class="downloads">
+          <a href="EmailClassificationSystem.pdf" target="_blank" rel="noopener">📊 Slides / Report (PDF)</a>
+          <a href="https://nbviewer.org/github/pusapati98/pusapati98.github.io/blob/main/email-classification-nlp-project/Spam-Ham-Model-Development.ipynb"
+             target="_blank" rel="noopener">💻 Spam-Ham Notebook</a>
+          <a href="https://nbviewer.org/github/pusapati98/pusapati98.github.io/blob/main/email-classification-nlp-project/Priority_Mails_Model_Development_File.ipynb"
+             target="_blank" rel="noopener">💻 Priority Classification Notebook</a>
+          <a href="https://nbviewer.org/github/pusapati98/pusapati98.github.io/blob/main/email-classification-nlp-project/Dataset-Cleaning.ipynb"
+             target="_blank" rel="noopener">🧾 Dataset Cleaning Notebook</a>
+        </div>
+        <p class="meta">Slides summarize the approach; notebooks show data cleaning, preprocessing, and model training details.</p>
+      </aside>
+    </section>
+
+    <section class="card">
+      <h2>Sample Results</h2>
+      <p class="meta">Click a thumbnail to enlarge result visuals.</p>
+      <div class="gallery">
+        <figure class="thumb">
+          <a href="spam_confusion.png" target="_blank" rel="noopener">
+            <img src="spam_confusion.png" alt="Spam Confusion Matrix">
+          </a>
+          <figcaption>Spam-Ham Confusion Matrix</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="priority_confusion.png" target="_blank" rel="noopener">
+            <img src="priority_confusion.png" alt="Priority Confusion Matrix">
+          </a>
+          <figcaption>Priority Classification Confusion Matrix</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="model_comparison.png" target="_blank" rel="noopener">
+            <img src="model_comparison.png" alt="Model Comparison">
+          </a>
+          <figcaption>Model Comparison — Logistic Regression vs Random Forest</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Method & Highlights</h2>
+        <ul>
+          <li>Dataset from Gmail API: subject, sender, date, body.</li>
+          <li>Preprocessing: stopword removal, tokenization, lemmatization, lowercasing.</li>
+          <li>Feature Engineering: Bag of Words, TF-IDF, Word2Vec.</li>
+          <li>Models: Logistic Regression, Random Forest, Naive Bayes, XGBoost, SVM.</li>
+          <li>Evaluation: accuracy, precision, recall, F1-score, confusion matrices.</li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h2>Key Insights (sample)</h2>
+        <ul>
+          <li>Logistic Regression with TF-IDF gave best results for spam detection.</li>
+          <li>Random Forest was less balanced for priority classification compared to Logistic Regression.</li>
+          <li>Spam detection achieved over 95% accuracy; priority classification struggled most with “High” class.</li>
+        </ul>
+        <p class="meta">See full report and notebooks for details.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Email Classification NLP Project · Built with Python & NLP</p>
+  </footer>
+</body>
+</html>
