@@ -1,105 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cisco Practicum Project</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="description" content="Cisco Practicum Project — Data analysis on RMA cases, product families, automation opportunities, and repair alignment." />
 </head>
 <body>
-
-  <!-- Cover -->
+  <img class="cover" src="cisco_cover.png" alt="Cisco Project Cover" />
+  
   <header>
-    <img src="cisco_cover.png" alt="Cisco Cover" class="cover-image">
-    <h1>Cisco Practicum Project</h1>
-    <p><strong>Santa Clara University Practicum Collaboration</strong></p>
+    <div class="wrap">
+      <h1>Cisco Practicum Project</h1>
+      <p>Product Returns • Process Improvement • Automation — Data Science Practicum with Cisco</p>
+    </div>
   </header>
 
-  <!-- Overview -->
-  <section>
-    <h2>Project Overview</h2>
-    <p>
-      This practicum was conducted in collaboration with Cisco Systems. Our team analyzed <strong>~290,000 Return Merchandise Authorization (RMA) cases</strong> 
-      from July 2022 – July 2023 to uncover opportunities for efficiency improvements, automation, 
-      and better customer support. 
-    </p>
-  </section>
+  <main>
+    <section class="grid">
+      <article class="card">
+        <h2>Overview</h2>
+        <p>
+          This practicum project with Cisco focused on analyzing large-scale Return Merchandise Authorization (RMA) data
+          to uncover patterns in product failures, resolution bottlenecks, and opportunities for automation. 
+          We examined issue frequencies, resolution times, and repair alignment scores across multiple product families 
+          and customer segments.
+        </p>
+        <ul class="meta">
+          <li>Key goals: identify failure hotspots, reduce resolution delays, and recommend automation candidates.</li>
+          <li>Tech: Python, SQL, Tableau, Excel, advanced data visualization & analysis.</li>
+        </ul>
+      </article>
 
-  <!-- Objectives -->
-  <section>
-    <h2>Key Objectives</h2>
-    <ul>
-      <li>Align engineer problem statements with customer resolutions using text similarity.</li>
-      <li>Identify automation opportunities in Cisco’s RMA process.</li>
-      <li>Analyze seasonality and cost patterns in RMA cases.</li>
-      <li>Optimize Small-Medium Business (SMB) channel effectiveness.</li>
-      <li>Recommend customer education resources to reduce repeat RMAs.</li>
-    </ul>
-  </section>
+      <aside class="card">
+        <h2>Open the Assets</h2>
+        <div class="downloads">
+          <a href="CISCO_SCU_FINAL_PRESENTATION_2024.pdf" target="_blank" rel="noopener">📊 Final Presentation (PDF)</a>
+        </div>
+        <p class="meta">Slides summarize the full analysis and recommendations delivered to Cisco stakeholders.</p>
+      </aside>
+    </section>
 
-  <!-- Insights -->
-  <section>
-    <h2>Key Insights & Recommendations</h2>
-    <ul>
-      <li>Automate Phone product family RMAs with high repair alignment scores.</li>
-      <li>Promote web-based RMA submissions for SMBs instead of manual ones.</li>
-      <li>Automate failed power supply approvals; keep manual check for “Call Home Device”.</li>
-      <li>Provide FAQs, tutorials, and guides to reduce repetitive case volumes.</li>
-      <li>Standardize resolution descriptions to improve text similarity automation.</li>
-    </ul>
-  </section>
+    <section class="grid">
+      <article class="card">
+        <h2>Our Team</h2>
+        <div class="team">
+          <img src="cisco_team.jpg" alt="Cisco Practicum Team" class="team-photo" />
+          <p class="meta">A wonderful collaborative team effort with Santa Clara University and Cisco mentors.</p>
+        </div>
+      </article>
+    </section>
 
-  <!-- Sample Results -->
-  <section>
-    <h2>Sample Results</h2>
-    <p>Here are some key visuals from our analysis:</p>
-    <div class="gallery">
-      <div class="card">
-        <img src="seasonality.png" alt="Seasonality of RMAs">
-        <p>Seasonality of RMA Cases – identifying spikes in PHONE, VIPTELA, C2960L, and SFP10G families.</p>
+    <section class="card">
+      <h2>Sample Results</h2>
+      <p class="meta">Click a thumbnail to enlarge the result visuals.</p>
+      <div class="gallery">
+        <figure class="thumb">
+          <a href="seasonality.png" target="_blank" rel="noopener">
+            <img src="seasonality.png" alt="Seasonality Trends">
+          </a>
+          <figcaption>Seasonality: Spikes in RMA returns for key products across months</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="product_family.png" target="_blank" rel="noopener">
+            <img src="product_family.png" alt="Product Family Analysis">
+          </a>
+          <figcaption>Product Families: Issue frequency vs. resolution time</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="automation.png" target="_blank" rel="noopener">
+            <img src="automation.png" alt="Automation Candidates">
+          </a>
+          <figcaption>Automation: Identifying products suitable for repair automation</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="cost_distribution.png" target="_blank" rel="noopener">
+            <img src="cost_distribution.png" alt="Cost vs Resolution Time">
+          </a>
+          <figcaption>Cost Distribution: Allocated cost vs. median resolution time</figcaption>
+        </figure>
+        <figure class="thumb">
+          <a href="alignment.png" target="_blank" rel="noopener">
+            <img src="alignment.png" alt="Repair Alignment Score">
+          </a>
+          <figcaption>Repair Alignment: Customer segments with automation potential</figcaption>
+        </figure>
       </div>
-      <div class="card">
-        <img src="product_family.png" alt="Product Family Breakdown">
-        <p>Top Product Families – Issue Frequency vs Resolution Time (highlighting long resolution delays).</p>
-      </div>
-      <div class="card">
-        <img src="automation.png" alt="Automation Opportunities">
-        <p>Automation Opportunities – based on median cost vs resolution time analysis.</p>
-      </div>
-      <div class="card">
-        <img src="cost_distribution.png" alt="Channel Repair Alignment">
-        <p>Channel Repair Alignment – Chat and Phone channels show highest similarity between issues and resolutions.</p>
-      </div>
-      <div class="card">
-        <img src="alignment.png" alt="Engineer-Customer Alignment">
-        <p>Engineer–Customer Alignment – customers with repair alignment scores above 0.72 identified as automation candidates.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Team -->
-  <section>
-    <h2>Our Team</h2>
-    <img src="cisco_team.jpg" alt="Cisco Practicum Team" class="team-photo">
-    <p>
-      Practicum team with Cisco mentors and Santa Clara University faculty. 
-      A collaborative effort to bridge academic research and industry impact.
-    </p>
-  </section>
-
-  <!-- Report -->
-  <section>
-    <h2>Full Report</h2>
-    <p>
-      You can view the complete presentation here:  
-      <a href="CISCO_SCU_FINAL_PRESENTATION_2024.pdf" target="_blank">📄 Cisco Practicum Final Report (PDF)</a>
-    </p>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2024 Cisco Practicum Project | Santa Clara University</p>
+    <p>© 2025 Cisco Practicum Project · Santa Clara University & Cisco Collaboration</p>
   </footer>
-
 </body>
 </html>
