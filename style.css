@@ -93,6 +93,47 @@ body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--b
 .proj-info h3 {margin:0 0 6px 0;font-size:1.2rem;color:var(--brand)}
 .proj-info p {margin:0;color:var(--muted);font-size:.95rem}
 
+/* Education & Experience */
+.edu-exp {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+.edu-exp-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.edu-exp h2 {
+  color: var(--brand);
+  margin-top: 0;
+}
+
+.edu-exp ul {
+  padding-left: 18px;
+  margin: 0;
+  list-style: disc;
+}
+
+.edu-exp li {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media(min-width: 900px) {
+  .edu-exp-grid {
+    grid-template-columns: 1fr 1fr; /* side by side on desktop */
+  }
+}
+
+
 /* Footer */
 footer {
   text-align:center;
