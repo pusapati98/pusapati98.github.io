@@ -97,22 +97,23 @@ body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--b
 .edu-exp {
   max-width: 1100px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 24px;
   border-radius: 12px;
   background: #fff;
   border: 1px solid var(--line);
-  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
 }
 
 .edu-exp-grid {
   display: grid;
-  gap: 20px;
+  gap: 32px;
   grid-template-columns: 1fr;
 }
 
 .edu-exp h2 {
   color: var(--brand);
-  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
 }
 
 .edu-exp ul {
@@ -122,7 +123,7 @@ body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--b
 }
 
 .edu-exp li {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -132,6 +133,7 @@ body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--b
     grid-template-columns: 1fr 1fr; /* side by side on desktop */
   }
 }
+
 
 
 /* Footer */
