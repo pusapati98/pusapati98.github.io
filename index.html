@@ -1,94 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Landing Page</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4; /* Light background color */
-            color: #333; /* Dark text color */
-        }
-        h1 {
-            color: #4CAF50; /* Green color for the main heading */
-            text-align: center;
-        }
-        p {
-            margin: 10px 0;
-            padding: 10px;
-            background: #fff; /* White background for paragraphs */
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-        }
-        a {
-            color: #0066cc; /* Link color */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-            background-color: #fff; /* White background for the container */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Shadow for the container */
-        }
-        .profile-picture {
-            flex: 1;
-            padding-right: 20px; /* Space between picture and text */
-            text-align: center; /* Center the image */
-        }
-        .info {
-            flex: 2; /* This takes up more space than the picture */
-        }
-        img {
-            width: 400px; /* Increase the width for a bigger image */
-            height: 400px; /* Keep height the same for a square image */
-            object-fit: cover; /* Cover the area without distortion */
-            border: none; /* Remove border */
-        }
-        h2 {
-            color: #333; /* Dark color for subheadings */
-            margin-top: 20px;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Stack on smaller screens */
-                align-items: center;
-            }
-            .profile-picture {
-                padding-right: 0; /* Remove padding on smaller screens */
-                margin-bottom: 20px; /* Add space below the picture */
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Padma Rishitha Pusapati – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio showcasing Data Analytics, NLP, BI, and Data Science projects by Padma Rishitha Pusapati." />
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>Hello, I am <strong>Rishitha</strong>. This is my personal website hosted on GitHub Pages.</p>
-
-    <div class="container">
-        <div class="profile-picture">
-            <img src="IMG_4787.jpg" alt="Profile Picture">
-        </div>
-        <div class="info">
-            <h2>About Me</h2>
-            <p>I am a passionate developer interested in AI and web development.</p>
-
-            <h2>Education</h2>
-            <p>I am currently doing my Master's in Information Systems at Santa Clara University.</p>
-
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:pusapatirishitha98@gmail.com">pusapatirishitha98@gmail.com</a>.</p>
-
-            <p><a href="Padma Rishitha Pusapati.pdf">Download my CV</a></p>
-        </div>
+  <header class="intro-header">
+    <div class="wrap">
+      <h1>Padma Rishitha Pusapati</h1>
+      <p>Recent MS Graduate · Data Analytics · NLP · Business Intelligence</p>
+      <p>
+        <a href="PadmaRishithaPusapati.pdf" target="_blank" class="btn">📄 Resume</a>
+        <a href="https://www.linkedin.com/in/padma-rishitha-pusapati-a4480b291/" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/pusapati98" target="_blank" class="btn">GitHub</a>
+      </p>
     </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="about card">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="IMG_4787.jpg" alt="Padma Rishitha Pusapati photo">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am a recent Master’s graduate in Information Systems from Santa Clara University (June 2025), 
+          with 3+ years of professional experience at Cisco, Accenture, and Infosys. 
+          My work spans <strong>data analytics, NLP, business intelligence, and strategy</strong>, 
+          with a strong focus on turning data into actionable insights. 
+        </p>
+        <p>
+          I have also served as a Teaching Assistant, guiding graduate and undergraduate students in Tableau 
+          and BI practices. I enjoy blending technical expertise with storytelling to create meaningful 
+          business outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <a href="email-classification-nlp-project/index.html">
+            <img src="email-classification-nlp-project/cover.png" alt="Email Classification NLP Project">
+            <div class="proj-info">
+              <h3>Email Classification NLP</h3>
+              <p>Spam detection & email priority classification using NLP & ML.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="cisco-practicum-project/index.html">
+            <img src="cisco-practicum-project/cisco_cover.png" alt="Cisco Practicum Project">
+            <div class="proj-info">
+              <h3>Cisco Practicum Project</h3>
+              <p>RMA analysis & automation insights in collaboration with Cisco.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="tableau-ta-work/index.html">
+            <img src="tableau-ta-work/cover.png" alt="Tableau TA Work">
+            <div class="proj-info">
+              <h3>Tableau TA Work</h3>
+              <p>Taught Tableau dashboards for BI & Data Warehousing course.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="job-data-analysis-project/index.html">
+            <img src="job-data-analysis-project/cover.png" alt="Job Data Analysis Project">
+            <div class="proj-info">
+              <h3>Job Market Analysis</h3>
+              <p>SQL + visualization project analyzing job trends and skills demand.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="lingual-leap-project/index.html">
+            <img src="lingual-leap-project/cover.png" alt="Lingual Leap Project">
+            <div class="proj-info">
+              <h3>Lingual Leap</h3>
+              <p>Translation app design for seamless cross-language communication.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="kodak-project/index.html">
+            <img src="kodak-project/cover.png" alt="Kodak Case Study">
+            <div class="proj-info">
+              <h3>Kodak Case Study</h3>
+              <p>Strategic recommendations for Kodak’s digital transformation.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Padma Rishitha Pusapati · Portfolio</p>
+  </footer>
 </body>
 </html>
